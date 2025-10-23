@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Print Receipt</title>
+    <link rel="stylesheet" href="_styles.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <section id="screen">
+      <header id="notifBar">
+        <p id="time">9:41</p>
+        <ul id="icons">
+          <li class="barIcon"></li>
+          <li class="barIcon"></li>
+          <li class="barIcon"></li>
+        </ul>
+      </header>
+      <section id="receiptView">
+        <nav id="more_actions">
+          <div id="action_btn">B</div>
+          <p id="screen_label">Payment Status</p>
+          <div id="action_btn">E</div>
+        </nav>
+
+        <main id="reference">
+          <div id="printer_head">
+            <div id="printer_slot"></div>
+          </div>
+          <section id="receipt">
+            <div id="cover"></div>
+            <div>
+              <p id="location">Trip Invoice - Japan Summer 2025</p>
+              <div id="bills">
+                <div id="bill">
+                  <p>Total</p>
+                  <p class="price">$30,000</p>
+                </div>
+                <div id="bill">
+                  <p>Per Person</p>
+                  <p class="price">$6,000</p>
+                </div>
+              </div>
+              <ul id="users"></ul>
+
+              <div id="payment">
+                <div class="status_label">
+                  <p id="status_text">Payment Status</p>
+                  <p class="status">UNPAID</p>
+                </div>
+
+                <div class="loader">
+                  <div class="bar"></div>
+                  <div id="bar_2"></div>
+                  <div id="ball-1" class="ball"></div>
+                  <div id="ball-2" class="ball"></div>
+                  <div id="ball-3" class="ball"></div>
+                  <div id="ball-4" class="ball"></div>
+                  <div id="ball-5" class="ball"></div>
+                  <div id="print"></div>
+                </div>
+              </div>
+
+              <div id="buttons">
+                <div>
+                  <button id="send"><p>Send Remainder</p></button>
+                </div>
+                <div>
+                  <button id="download"><p>Download Invoice</p></button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer id="footer">
+          <div id="payment_method">
+            <p>Payment Method</p>
+            <div id="visa_card">
+              <p>Visa Ending 2986</p>
+              <div id="preview"></div>
+            </div>
+          </div>
+          <div>
+            <button id="pay_now">Pay Now</button>
+          </div>
+        </footer>
+      </section>
+    </section>
+  </body>
+</html>
